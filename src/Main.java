@@ -183,7 +183,5 @@ public class Main {
 
 
         scanner.close();
-
-        //test
     }
 }
