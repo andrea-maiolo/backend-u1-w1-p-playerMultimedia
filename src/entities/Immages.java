@@ -34,5 +34,8 @@ public class Immages extends ElementoMultimediale implements Brightness {
         System.out.println(this.title + " " + currentBright);
     }
 
+    public void execute() {
+        show();
+    }
 
 }

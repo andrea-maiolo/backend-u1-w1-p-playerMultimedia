@@ -70,4 +70,8 @@ public class Video extends ElementoMultimediale implements Brightness, Volume {
             System.out.println(this.title + " " + currentBright + " " + currentVolume);
         }
     }
+
+    public void execute() {
+        play();
+    }
 }

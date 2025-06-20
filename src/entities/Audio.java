@@ -13,11 +13,9 @@ public class Audio extends ElementoMultimediale implements Volume {
     }
 
     public void play() {
+        StringBuilder curretnVolume = new StringBuilder();
+        curretnVolume.repeat("!", this.volume);
         for (int i = 0; i < this.duration; i++) {
-            StringBuilder curretnVolume = new StringBuilder();
-            for (int j = 0; j < this.volume; j++) {
-                curretnVolume.append("!");
-            }
             System.out.println(this.title + " " + curretnVolume);
         }
     }
@@ -48,5 +46,9 @@ public class Audio extends ElementoMultimediale implements Volume {
         } else {
             this.volume -= value;
         }
+    }
+
+    public void execute() {
+        play();
     }
 }
