@@ -44,20 +44,20 @@ public class Video extends ElementoMultimediale implements Brightness, Volume {
     }
 
     @Override
-    public void increaseBright() {
-        if (brightness < 10) {
-            brightness++;
+    public void increaseBright(int value) {
+        if (brightness + value < 10) {
+            brightness += value;
         } else {
-            System.out.println("max bright");
+            brightness = 10;
         }
     }
 
     @Override
-    public void decreaseBright() {
-        if (brightness > 1) {
-            brightness--;
+    public void decreaseBright(int value) {
+        if (brightness - value > 1) {
+            brightness -= value;
         } else {
-            System.out.println("min bright");
+            brightness = 1;
         }
     }
 

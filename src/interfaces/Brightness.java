@@ -1,9 +1,9 @@
 package interfaces;
 
 public interface Brightness {
-    public void increaseBright();
+    public void increaseBright(int value);
 
-    public void decreaseBright();
+    public void decreaseBright(int value);
 
     //forse method show
 }
